@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hajraa Thuisdag</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="E.S.V.V. Hajraa">
+        <h1>Thuisdag SoundBoard</h1>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.min.js"></script>
+    <script>
+    $(function() {
+        var colours = ["#004B8D", "#0074D9", "#4192D9", "#7ABAF2"];
+        $.getJSON("sounds.json", function(data){
+            $.each(data.sounds, function(i, s){
+                var sound = new Howl({
+                    src: ["audio/"+s.file]
+                });
+                var button = document.createElement("div");
+                var title = document.createElement("h2");
+                $(title).text(s.name);
+                $(button).addClass("sound");
+                $(button).append(title);
+                button.style.background = colours[i % colours.length];
+                button.onclick = function() {
+                    sound.play();
+                };
+                $("body").append(button);
+            });
+        })
+    });
+    </script>
+</body>
+</html>

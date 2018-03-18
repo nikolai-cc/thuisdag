@@ -1,0 +1,56 @@
+{
+  "sounds":[
+    {
+      "name":"DENIED!",
+      "file":"denied.wav"
+    },
+    {
+      "name":"Epic Horn",
+      "file":"epic horn.wav"
+    },
+    {
+      "name":"Evil Laugh",
+      "file":"evil laugh.wav"
+    },
+    {
+      "name":"Geef Die Scheids Een Banaan!",
+      "file":"banaan.wav"
+    },
+    {
+      "name":"Everybody Put Your Hands In The Air!",
+      "file":"hands in the air.wav"
+    },
+    {
+      "name":"Liever Een...",
+      "file":"liever een,..wav"
+    },
+    {
+      "name":"MOET GOOOEEEDDD!!",
+      "file":"moet goed.wav"
+    },
+    {
+      "name":"Monster Kill",
+      "file":"Monster kill.wav"
+    },
+    {
+      "name":"Oooooh.... PIZZA!",
+      "file":"ooooh piza.wav"
+    },
+    {
+      "name":"PINSIR PINSIR",
+      "file":"PinsirPinsir.wav"
+    },
+    {
+      "name":"Roffel",
+      "file":"roffel.wav"
+    },
+    {
+      "name":"SPRONGSERVICE!",
+      "file":"sprongservice.wav"
+    },
+    {
+      "name":"Welkom Allemaal",
+      "file":"welkom allemaal.wav"
+    }
+  ]
+}
